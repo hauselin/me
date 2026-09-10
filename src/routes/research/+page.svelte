@@ -1,6 +1,6 @@
 <script lang="ts">
-	import { papers, themes } from '$lib/data/papers';
 	import { pdfUrl } from '$lib/config';
+	import { papers, themes } from '$lib/data/papers';
 </script>
 
 <svelte:head><title>Research | Hause</title></svelte:head>
@@ -11,7 +11,7 @@
 		<p>
 			Academic papers I have published or am working on now (non-exhaustive). See
 			<a
-				href="https://scholar.google.com/citations?user=4_ZopI0AAAAJ&hl=en"
+				href="https://scholar.google.com/citations?hl=en&user=4_ZopI0AAAAJ&view_op=list_works&sortby=pubdate"
 				target="_blank"
 				rel="noopener">Google Scholar profile</a
 			>

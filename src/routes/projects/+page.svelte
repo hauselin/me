@@ -20,7 +20,7 @@
 			<h2 class="mb-1 font-bold">Academic publications</h2>
 			<p class="mb-2">
 				See <a
-					href="https://scholar.google.com/citations?user=4_ZopI0AAAAJ&hl=en"
+					href="https://scholar.google.com/citations?hl=en&user=4_ZopI0AAAAJ&view_op=list_works&sortby=pubdate"
 					target="_blank"
 					rel="noopener">Google Scholar profile</a
 				>
