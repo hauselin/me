@@ -3,11 +3,14 @@
 	import { pdfUrl } from '$lib/config';
 </script>
 
-<svelte:head><title>My Projects | Hause</title></svelte:head>
+<svelte:head>
+	<title>Projects · Hause</title>
+	<meta name="description" content="Projects · Hause Lin" />
+</svelte:head>
 
 <main class="space-y-6 pb-12">
 	<header class="mx-auto max-w-160 pt-36 pb-16 text-center">
-		<h1 class="mb-3 text-[2rem] font-light">My Projects</h1>
+		<h1 class="mb-3 text-[2rem] font-light">Projects</h1>
 		<p>
 			A few ongoing or recently completed projects. See also
 			<a href="https://github.com/hauselin" target="_blank" rel="noopener">Github @hauselin</a> for more.

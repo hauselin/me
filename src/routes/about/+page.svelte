@@ -1,9 +1,12 @@
 <script lang="ts">
-	import { books } from '$lib/data/books';
 	import { CDN } from '$lib/config';
+	import { books } from '$lib/data/books';
 </script>
 
-<svelte:head><title>About Me | Hause</title></svelte:head>
+<svelte:head>
+	<title>About · Hause</title>
+	<meta name="description" content="About me · Hause Lin" />
+</svelte:head>
 
 <main class="space-y-4 pb-12">
 	<header class="mx-auto max-w-160 pt-36 pb-16 text-center">
@@ -74,7 +77,7 @@
 	<ul class="grid gap-3 sm:grid-cols-2">
 		{#each books as book (book.title)}
 			<li class="flex items-center gap-4 rounded bg-panel p-4">
-				<img src={book.image} alt={book.title} class="w-[90px]" />
+				<img src={book.image} alt={book.title} class="w-22.5" />
 				<div>
 					<a href={book.href} target="_blank" rel="noopener" class="font-semibold">{book.title}</a>
 					<p class="text-sm text-muted">by {book.author}</p>

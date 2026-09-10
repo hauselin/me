@@ -6,7 +6,10 @@
 	if (browser) sessionStorage.setItem('intro', 'seen');
 </script>
 
-<svelte:head><title>Hause Lin</title></svelte:head>
+<svelte:head>
+	<title>Hause Lin</title>
+	<meta name="description" content="I'm Hause, a researcher at Google DeepMind." />
+</svelte:head>
 
 <main class={['flex flex-1 flex-col items-center justify-center text-center', { instant: seen }]}>
 	<h1 class="typing text-8xl font-medium text-fg">Hi.</h1>

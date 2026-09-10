@@ -3,7 +3,10 @@
 	import { papers, themes } from '$lib/data/papers';
 </script>
 
-<svelte:head><title>Research | Hause</title></svelte:head>
+<svelte:head>
+	<title>Research · Hause</title>
+	<meta name="description" content="Research · Hause Lin" />
+</svelte:head>
 
 <main class="space-y-6 pb-12">
 	<header class="mx-auto max-w-160 pt-36 pb-16 text-center">
