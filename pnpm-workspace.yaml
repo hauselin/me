@@ -1,3 +1,7 @@
 onlyBuiltDependencies:
   - esbuild
   - workerd
+
+# floor a transitive dep of @sveltejs/kit (GHSA cookie <0.7.0); unused at runtime on a static site
+overrides:
+  cookie: '^0.7.0'
