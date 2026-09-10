@@ -1,0 +1,37 @@
+@import 'tailwindcss';
+
+/* One palette. The browser picks the side of light-dark() from color-scheme,
+   which follows the system unless data-theme overrides it. */
+@theme {
+	--color-bg: light-dark(#ffffff, #151515);
+	--color-fg: light-dark(#212529, #e6e6e6);
+	--color-body: light-dark(#5c5858, #b8b8b8);
+	--color-muted: light-dark(#8a8a8a, #777777);
+	--color-panel: light-dark(#f8f9fa, #1f1f1f);
+	--color-link: light-dark(#26828e, #4fb3bf);
+	--font-sans: 'Overpass', ui-sans-serif, system-ui, sans-serif;
+}
+
+:root {
+	color-scheme: light dark;
+}
+:root[data-theme='light'] {
+	color-scheme: light;
+}
+:root[data-theme='dark'] {
+	color-scheme: dark;
+}
+
+@layer base {
+	body {
+		@apply bg-bg font-sans text-base leading-6 text-body;
+	}
+	h1,
+	h2,
+	h3 {
+		@apply text-fg;
+	}
+	a {
+		@apply text-link hover:underline;
+	}
+}

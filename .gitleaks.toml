@@ -1,0 +1,6 @@
+[extend]
+useDefault = true
+
+# Cloudflare Web Analytics beacon token: shipped in public HTML by design, not a secret
+[[allowlists]]
+regexes = ['''2e4e38585a674b91bb8522f358cc10a6''']

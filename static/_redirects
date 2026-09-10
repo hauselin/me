@@ -1,0 +1,15 @@
+/home         /                                                                 301
+/url          https://docs.google.com/presentation/d/1nCjp70p02mWdOX-aPkWG6gFda4UOJb0DCnScy8h1EY0/edit?slide=id.g37cc8e60df8_0_28#slide=id.g37cc8e60df8_0_28  301
+/scholar      https://scholar.google.com/citations?user=4_ZopI0AAAAJ&hl=en    301
+/osf          https://osf.io/qnhy7/                                             301
+/datascience  https://hausetutorials.netlify.app/                               301
+/researchgate https://www.researchgate.net/profile/Hause_Lin                    301
+/linkedin     https://www.linkedin.com/in/hauselin                              301
+/github       https://github.com/hauselin                                       301
+/twitter      https://twitter.com/hauselin                                      301
+/medium       https://medium.com/@ausius                                        301
+/escal        https://www.escal.site                                            301
+/orcid        https://orcid.org/0000-0003-4590-7039                             301
+# old paper paths still linked from elsewhere on the web
+/public/papers/*  https://cdn.ausdat.fyi/papers/:splat                         301
+/public/cv_hauselin.pdf  https://cdn.ausdat.fyi/me-static/cv_hauselin.pdf                301
