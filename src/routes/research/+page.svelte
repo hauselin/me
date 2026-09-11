@@ -9,7 +9,7 @@
 </svelte:head>
 
 <main class="space-y-6 pb-12">
-	<header class="mx-auto max-w-160 pt-36 pb-16 text-center">
+	<header class="mx-auto max-w-160 pt-20 pb-16 text-center sm:pt-36">
 		<h1 class="mb-3 text-[2rem] font-light">Research</h1>
 		<p>
 			Academic papers I have published or am working on now (non-exhaustive). See

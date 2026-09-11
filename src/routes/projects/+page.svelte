@@ -9,7 +9,7 @@
 </svelte:head>
 
 <main class="space-y-6 pb-12">
-	<header class="mx-auto max-w-160 pt-36 pb-16 text-center">
+	<header class="mx-auto max-w-160 pt-20 pb-16 text-center sm:pt-36">
 		<h1 class="mb-3 text-[2rem] font-light">Projects</h1>
 		<p>
 			A few ongoing or recently completed projects. See also

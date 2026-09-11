@@ -9,7 +9,7 @@
 </svelte:head>
 
 <main class="space-y-4 pb-12">
-	<header class="mx-auto max-w-160 pt-36 pb-16 text-center">
+	<header class="mx-auto max-w-160 pt-20 pb-16 text-center sm:pt-36">
 		<h1 class="mb-3 text-[2rem] font-light">About Me</h1>
 		<p>
 			I'm Hause, a researcher at Google DeepMind. I like to engineer and test solutions to empower
