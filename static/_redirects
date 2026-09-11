@@ -10,6 +10,7 @@
 /medium       https://medium.com/@ausius                                        301
 /escal        https://www.escal.site                                            301
 /orcid        https://orcid.org/0000-0003-4590-7039                             301
+/cv        	  https://cdn.ausdat.fyi/me-static/cv_hauselin.pdf                  301
 # old paper paths still linked from elsewhere on the web
 /public/papers/*  https://cdn.ausdat.fyi/papers/:splat                         301
 /public/cv_hauselin.pdf  https://cdn.ausdat.fyi/me-static/cv_hauselin.pdf                301
