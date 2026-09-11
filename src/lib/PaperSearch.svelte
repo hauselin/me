@@ -3,6 +3,8 @@
 	import { pdfUrl } from '$lib/config';
 
 	let query = $state('');
+	let open = $state(false);
+	let box: HTMLDivElement;
 
 	// derived, not stored: the haystack is fixed data, the hits follow the query
 	const indexed = papers
@@ -12,21 +14,29 @@
 			text: `${p.authors} ${p.year} ${p.title} ${p.venue ?? ''} ${(p.tags ?? []).map((t) => '#' + t).join(' ')}`.toLowerCase()
 		}));
 
-	let hits = $derived(
-		query.trim().length < 2
-			? []
-			: indexed.filter((i) => i.text.includes(query.trim().toLowerCase()))
-	);
+	const q = $derived(query.trim().toLowerCase());
+	const hits = $derived(q.length < 2 ? [] : indexed.filter((i) => i.text.includes(q)));
 </script>
 
-<div class="relative">
+<svelte:document
+	onpointerdown={(e) => {
+		if (!box.contains(e.target as Node)) open = false;
+	}}
+/>
+
+<div class="relative" bind:this={box}>
 	<input
 		type="search"
 		bind:value={query}
+		oninput={() => (open = true)}
+		onfocus={() => (open = true)}
+		onkeydown={(e) => {
+			if (e.key === 'Escape') open = false;
+		}}
 		placeholder="search title, author, year, #tag"
 		class="w-full rounded-md border border-muted/40 bg-bg px-3 py-2"
 	/>
-	{#if hits.length}
+	{#if open && hits.length}
 		<ul
 			class="absolute inset-x-0 top-full z-10 mt-1 max-h-80 overflow-y-auto rounded-md border border-muted/40 bg-bg py-1 text-sm shadow-[0_2px_8px_rgba(0,0,0,0.08)]"
 		>
@@ -43,7 +53,7 @@
 				</li>
 			{/each}
 		</ul>
-	{:else if query.trim().length >= 2}
+	{:else if open && q.length >= 2}
 		<p
 			class="absolute inset-x-0 top-full z-10 mt-1 rounded-md border border-muted/40 bg-bg px-3 py-1.5 text-sm text-muted"
 		>
