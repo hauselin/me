@@ -8,7 +8,10 @@
 	const home = $derived(page.url.pathname === '/');
 </script>
 
-<svelte:head><link rel="icon" href={favicon} /></svelte:head>
+<svelte:head>
+	<link rel="icon" href={favicon} />
+	<link rel="canonical" href="https://www.hauselin.com{page.url.pathname}" />
+</svelte:head>
 
 <!-- one bar on every page so the toggle never moves; home hides everything but the toggle -->
 <header

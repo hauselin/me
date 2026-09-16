@@ -12,5 +12,7 @@
 /orcid        https://orcid.org/0000-0003-4590-7039                             301
 /cv        	  https://cdn.ausdat.fyi/me-static/cv_hauselin.pdf                  301
 # old paper paths still linked from elsewhere on the web
+/public/papers/Lin2021instilling_value_effort_stage1.pdf  https://cdn.ausdat.fyi/papers/Lin_Inzlicht_2024-effort.pdf  301
 /public/papers/*  https://cdn.ausdat.fyi/papers/:splat                         301
 /public/cv_hauselin.pdf  https://cdn.ausdat.fyi/me-static/cv_hauselin.pdf                301
+/attachments/publications/Lin2019PsySci.pdf  https://cdn.ausdat.fyi/papers/Lin2020depletion.pdf  301

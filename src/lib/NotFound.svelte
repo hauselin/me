@@ -1,4 +1,7 @@
-<svelte:head><title>Not found | Hause</title></svelte:head>
+<svelte:head>
+	<title>Not found | Hause</title>
+	<meta name="robots" content="noindex" />
+</svelte:head>
 
 <main class="flex flex-col items-center pt-36 pb-16 text-center">
 	<h1 class="text-8xl font-medium text-fg">404.</h1>
