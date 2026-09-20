@@ -86,8 +86,15 @@
 		{/each}
 	</ul>
 
-	<h2 class="pt-6 text-2xl font-bold">A few scientific papers I like</h2>
+	<h2 class="pt-6 text-2xl font-bold">What I enjoyed reading</h2>
 	<ul class="list-disc space-y-1 pl-5">
+		<li>
+			<a
+				href="https://www.gutenberg.org/files/44867/44867-h/44867-h.htm"
+				target="_blank"
+				rel="noopener">Wells (1902). The discovery of the future.</a
+			>
+		</li>
 		<li>
 			<a href="https://www.nature.com/articles/s41586-021-03380-y" target="_blank" rel="noopener"
 				>Adams et al. (2021) People systematically overlook subtractive changes.</a
@@ -107,7 +114,7 @@
 				target="_blank"
 				rel="noopener"
 				>Aston-Jones & Cohen (2014). An integrative theory of locus coeruleus-norepinephrine
-				function: Adaptive gain and optimal performance.</a
+				function.</a
 			>
 		</li>
 		<li>
